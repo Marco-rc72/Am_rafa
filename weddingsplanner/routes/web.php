@@ -19,10 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('contactos', function () {
-    return view('Agregar_contactos');
-})->middleware(['auth', 'verified'])->name('Agregar_contactos');
-
 
 Route::get('/dashboard', function () {
     return view('dashboard');
